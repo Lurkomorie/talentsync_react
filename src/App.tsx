@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Flex } from "@chakra-ui/react";
+import React from "react";
+import Toolbar from "./components/Toolbar/Toolbar";
+import ThemeProvider from "./providers/ThemeProvider/ThemeProvider";
+import FirstGreetings from "./components/FirstGreetings/FirstGreetings";
+import ProcessTree from "./components/ProcessTree/ProcessTree";
+import AboutBlock from "./components/AboutBlock/AboutBlock";
+import WhyChoose from "./components/WhyChoose/WhyChoose";
+import BookMeetingBlock from "./components/BookMeetingBlock/BookMeetingBlock";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
 
-function App() {
+export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <Flex flexDirection="column" align="center" justify="center">
+        <Toolbar />
+        <FirstGreetings />
+        <ProcessTree />
+        <AboutBlock />
+        <WhyChoose />
+        <BookMeetingBlock />
+        <ContactUs />
+        <Footer />
+      </Flex>
+    </ThemeProvider>
   );
 }
-
-export default App;
