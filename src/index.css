@@ -24,3 +24,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.slick-arrow::before {
+  color: #574A44 !important;
+  font-size: 30px !important;
+}

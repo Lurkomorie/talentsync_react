@@ -9,7 +9,7 @@ const FirstGreetings: React.FC = () => {
     <Container
       maxW="container.xl"
       color="brand.400"
-      h="80dvh"
+      h="70dvh"
       display="flex"
       justifyContent="space-between"
       alignItems="center"
@@ -42,7 +42,7 @@ const FirstGreetings: React.FC = () => {
       </Fade>
       <BackgroundCircle
         blur={180}
-        right={-50}
+        left={-50}
         top="50%"
         rotation={0}
         bg="brand.500"
@@ -57,7 +57,7 @@ const FirstGreetings: React.FC = () => {
       />
       <BackgroundCircle
         blur={120}
-        right="200px"
+        left="200px"
         top="10%"
         rotation={0}
         bg="brand.600"

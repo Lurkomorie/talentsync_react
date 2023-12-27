@@ -9,6 +9,7 @@ import WhyChoose from "./components/WhyChoose/WhyChoose";
 import BookMeetingBlock from "./components/BookMeetingBlock/BookMeetingBlock";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
+import LanguageBlock from "./components/LanguagesBlock/LanguageBlock";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Flex flexDirection="column" align="center" justify="center">
         <Toolbar />
         <FirstGreetings />
+        <LanguageBlock />
         <ProcessTree />
         <AboutBlock />
         <WhyChoose />

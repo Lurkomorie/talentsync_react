@@ -1,6 +1,6 @@
 import { Box, Container, HStack, Icon, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
             TalentSync
           </Text>
           <Text fontSize="md" color="brand.400" textAlign="left" maxW="500px">
-            TalentSync is an expert team with over 10 years of experience in
-            software development that adjusts to your specific needs without
-            wasting your time.
+            Specialized in comprehensive talent management solutions, offering
+            expertise, innovation, and a personalized approach to meet the
+            unique needs of each business.
           </Text>
         </VStack>
         <HStack spacing={4} justifyContent="start" alignItems="start">
@@ -47,17 +47,17 @@ const Footer: React.FC = () => {
               Contacts
             </Text>
             <Text fontSize="md" color="brand.400">
-              +48 500 500 500
+              +373 68 300 700
             </Text>
             <Text fontSize="md" color="brand.400">
-              support@talentsync.eu
+              info@talentsync.eu
             </Text>
           </VStack>
           <VStack spacing={1} align="left">
             <Text fontSize="xl" fontWeight="semibold">
               Follow Us
             </Text>
-            <Icon as={FaFacebookSquare} fontSize="2em" color="white" />
+            <Icon as={FaLinkedinIn} fontSize="2em" color="white" />
           </VStack>
         </HStack>
       </Container>
