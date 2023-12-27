@@ -83,13 +83,17 @@ const Toolbar: React.FC = () => {
       alignItems="center"
       maxW="container.xl"
       w="100%"
-      py={{
+      pt={{
         base: 4,
         md: 12,
       }}
       px={{
         base: 4,
         md: 6,
+      }}
+      pb={{
+        base: 4,
+        md: 0,
       }}
       color="brand.400"
     >

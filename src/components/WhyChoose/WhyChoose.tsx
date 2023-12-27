@@ -14,6 +14,7 @@ import { WhyChooseItemProps } from "./WhyChoose.types";
 import { whyChooseItems } from "./WhyChoose.texts";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
+import BackgroundCircle from "../BackgroundCircle/BackgroundCircle";
 
 const WhyChoose: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const WhyChoose: React.FC = () => {
         md: 32,
       }}
       id="whyus"
+      position="relative"
     >
       <BlockTitle>Why choose TalentSync?</BlockTitle>
       <Fade bottom>
@@ -38,6 +40,21 @@ const WhyChoose: React.FC = () => {
           ))}
         </SimpleGrid>
       </Fade>
+      <BackgroundCircle
+        blur={120}
+        left="5%"
+        top="30%"
+        rotation={0}
+        bg="brand.500"
+        height={{
+          base: "250px",
+          md: "450px",
+        }}
+        width={{
+          base: "450px",
+          md: "100%",
+        }}
+      />
     </Container>
   );
 };

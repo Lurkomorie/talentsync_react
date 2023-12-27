@@ -96,7 +96,7 @@ const ContactUs: React.FC = () => {
           base: 12,
           md: 16,
         }}
-        fontSize="xl"
+        fontSize="2xl"
       />
       <BlockTitle>Or Let Us Contact You</BlockTitle>
       <Fade bottom>

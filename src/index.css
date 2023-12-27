@@ -29,3 +29,7 @@ a {
   color: #574A44 !important;
   font-size: 30px !important;
 }
+
+.slick-arrow {
+  opacity: 0.5;
+}

@@ -8,7 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 import logo from "../../icons/logo.png";
 
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
         justifyContent="space-between"
         alignItems="start"
       >
-        <VStack spacing={2} align="stretch" pb={4}>
+        <HStack spacing={2} align="center" pb={4}>
           <Image
             src={logo}
             alt="logo"
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             expertise, innovation, and a personalized approach to meet the
             unique needs of each business.
           </Text>
-        </VStack>
+        </HStack>
         <HStack spacing={4} justifyContent="start" alignItems="start">
           <VStack spacing={1} align="left" pr={4}>
             <Text fontSize="xl" fontWeight="semibold">
@@ -68,7 +68,13 @@ const Footer: React.FC = () => {
             <Text fontSize="xl" fontWeight="semibold">
               Follow Us
             </Text>
-            <Icon as={FaLinkedinIn} fontSize="2em" color="white" />
+            <Icon
+              as={FaLinkedin}
+              fontSize="2em"
+              color="blue.500"
+              borderRadius="lg"
+              overflow="hidden"
+            />
           </VStack>
         </HStack>
       </Container>

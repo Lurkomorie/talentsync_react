@@ -10,7 +10,7 @@ const FirstGreetings: React.FC = () => {
     <Container
       maxW="container.xl"
       color="brand.400"
-      h="70dvh"
+      h="65dvh"
       display="flex"
       justifyContent="space-between"
       alignItems="center"
