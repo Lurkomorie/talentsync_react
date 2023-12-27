@@ -38,41 +38,15 @@ const AboutBlock: React.FC = () => {
         </VStack>
       </Fade>
       <BackgroundCircle
-        blur={140}
-        top={0}
-        right="0"
-        rotation={0}
-        bg="brand.600"
-        height="70%"
-        width="60%"
-      />
-      <BackgroundCircle
-        blur={220}
-        top={0}
-        left="0"
-        rotation={0}
-        bg="brand.500"
-        height="70%"
-        width="60%"
-      />
-      <BackgroundCircle
-        blur={140}
-        bottom="30%"
-        right={0}
-        left={0}
-        rotation={0}
-        bg="brand.600"
-        height="50%"
-        width="120%"
-      />
-      <BackgroundCircle
-        blur={220}
+        blur={180}
         bottom={0}
+        top="-10%"
+        left="-10%"
         right={0}
-        left={0}
         rotation={0}
-        bg="brand.500"
-        height="50%"
+        opacity={0.7}
+        bg="brand.600"
+        height="140%"
         width="120%"
       />
     </Container>

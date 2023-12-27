@@ -16,6 +16,7 @@ import BlockSubtitle from "../BlockSubtitle/BlockSubtitle";
 //@ts-ignore
 import Fade from "react-reveal/Fade";
 import BookMeetingBtn from "../BookMeetingBtn/BookMeetingBtn";
+import BackgroundCircle from "../BackgroundCircle/BackgroundCircle";
 
 interface FormValues {
   name: string;
@@ -90,6 +91,7 @@ const ContactUs: React.FC = () => {
         base: 16,
         md: 32,
       }}
+      position="relative"
     >
       <BookMeetingBtn
         px={{
@@ -166,6 +168,18 @@ const ContactUs: React.FC = () => {
           )}
         </Formik>
       </Fade>
+      <BackgroundCircle
+        blur={180}
+        bottom={0}
+        top="-10%"
+        left="-10%"
+        right={0}
+        rotation={0}
+        opacity={0.7}
+        bg="brand.600"
+        height="140%"
+        width="120%"
+      />
     </Container>
   );
 };

@@ -20,6 +20,7 @@ import React from "react";
 import BookMeetingBtn from "../BookMeetingBtn/BookMeetingBtn";
 
 import logo from "../../icons/logo.png";
+import BackgroundCircle from "../BackgroundCircle/BackgroundCircle";
 
 const Toolbar: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -96,6 +97,7 @@ const Toolbar: React.FC = () => {
         md: 0,
       }}
       color="brand.400"
+      position="relative"
     >
       <Image
         src={logo}
@@ -104,6 +106,17 @@ const Toolbar: React.FC = () => {
         maxWidth="200px"
         height="100%"
         ml={{ base: 0, md: -6 }}
+      />
+      <BackgroundCircle
+        blur={120}
+        bottom={0}
+        top="0"
+        left="0"
+        rotation={0}
+        opacity={0.7}
+        bg="brand.600"
+        height="120%"
+        width="200px"
       />
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={5}>{menuItems}</HStack>

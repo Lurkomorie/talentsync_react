@@ -58,7 +58,7 @@ const FirstGreetings: React.FC = () => {
         left={-50}
         top="50%"
         rotation={0}
-        bg="brand.500"
+        bg="brand.600"
         height={{
           base: "250px",
           md: "450px",

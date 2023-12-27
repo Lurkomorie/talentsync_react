@@ -41,14 +41,16 @@ const WhyChoose: React.FC = () => {
         </SimpleGrid>
       </Fade>
       <BackgroundCircle
-        blur={120}
+        blur={180}
+        bottom={0}
+        top="-10%"
+        left="-10%"
         right={0}
-        left={0}
-        top="10%"
         rotation={0}
-        bg="brand.500"
-        height="100%"
-        width="100%"
+        opacity={0.7}
+        bg="brand.600"
+        height="140%"
+        width="120%"
       />
     </Container>
   );
