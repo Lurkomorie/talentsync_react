@@ -108,7 +108,7 @@ const Toolbar: React.FC = () => {
         ml={{ base: 0, md: -6 }}
       />
       <BackgroundCircle
-        blur={120}
+        blur={50}
         bottom={0}
         top="0"
         left="0"
