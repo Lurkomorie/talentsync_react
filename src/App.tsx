@@ -21,7 +21,7 @@ export default function Home() {
         <ProcessTree />
         <AboutBlock />
         <WhyChoose />
-        <BookMeetingBlock />
+        {/* <BookMeetingBlock /> */}
         <ContactUs />
         <Footer />
       </Flex>

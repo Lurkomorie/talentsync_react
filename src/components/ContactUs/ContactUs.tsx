@@ -15,6 +15,7 @@ import BlockTitle from "../BlockTitle/BlockTitle";
 import BlockSubtitle from "../BlockSubtitle/BlockSubtitle";
 //@ts-ignore
 import Fade from "react-reveal/Fade";
+import BookMeetingBtn from "../BookMeetingBtn/BookMeetingBtn";
 
 interface FormValues {
   name: string;
@@ -90,10 +91,14 @@ const ContactUs: React.FC = () => {
         md: 32,
       }}
     >
-      <BlockTitle mb={2}>Or Let Us Contact You</BlockTitle>
-      <BlockSubtitle maxW="container.sm" mb={{ base: 4, md: 6 }}>
-        Feel free to leave your contact information and we will get back to you
-      </BlockSubtitle>
+      <BookMeetingBtn
+        px={{
+          base: 12,
+          md: 16,
+        }}
+        fontSize="xl"
+      />
+      <BlockTitle>Or Let Us Contact You</BlockTitle>
       <Fade bottom>
         <Formik
           initialValues={initialValues}
