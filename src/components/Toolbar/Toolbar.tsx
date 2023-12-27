@@ -12,11 +12,14 @@ import {
   DrawerFooter,
   useDisclosure,
   HStack,
+  Image,
   VStack,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
 import BookMeetingBtn from "../BookMeetingBtn/BookMeetingBtn";
+
+import logo from "../../icons/logo.png";
 
 const Toolbar: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -90,17 +93,14 @@ const Toolbar: React.FC = () => {
       }}
       color="brand.400"
     >
-      <Text
-        fontSize={{ base: "xl", md: "3xl" }}
-        fontWeight="bold"
-        color="brand.400"
-        pl={{
-          base: 2,
-          md: 0,
-        }}
-      >
-        TalentSync
-      </Text>
+      <Image
+        src={logo}
+        alt="logo"
+        width="100%"
+        maxWidth="200px"
+        height="100%"
+        ml={{ base: 0, md: -6 }}
+      />
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={5}>{menuItems}</HStack>
       </Box>

@@ -1,6 +1,16 @@
-import { Box, Container, HStack, Icon, Text, VStack } from "@chakra-ui/react";
+import {
+  Image,
+  Box,
+  Container,
+  HStack,
+  Icon,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
-import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
+import logo from "../../icons/logo.png";
 
 const Footer: React.FC = () => {
   return (
@@ -27,14 +37,15 @@ const Footer: React.FC = () => {
         alignItems="start"
       >
         <VStack spacing={2} align="stretch" pb={4}>
-          <Text
-            fontSize={{ base: "xl", md: "3xl" }}
-            fontWeight="bold"
-            color="brand.400"
-            textAlign="left"
-          >
-            TalentSync
-          </Text>
+          <Image
+            src={logo}
+            alt="logo"
+            width="100%"
+            maxWidth="200px"
+            height="100%"
+            ml={{ base: -3, md: -6 }}
+            pb={2}
+          />
           <Text fontSize="md" color="brand.400" textAlign="left" maxW="500px">
             Specialized in comprehensive talent management solutions, offering
             expertise, innovation, and a personalized approach to meet the
