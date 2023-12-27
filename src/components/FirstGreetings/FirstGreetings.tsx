@@ -43,15 +43,15 @@ const FirstGreetings: React.FC = () => {
             Directly. B2B. No Intermediares.
           </Text>
           <BackgroundCircle
-            blur={180}
+            blur={80}
             bottom={0}
-            top="-10%"
-            left="-10%"
+            top="-25%"
+            left="-20%"
             right={0}
             rotation={0}
             opacity={0.7}
             bg="brand.600"
-            height="140%"
+            height="180%"
             width="120%"
           />
         </VStack>

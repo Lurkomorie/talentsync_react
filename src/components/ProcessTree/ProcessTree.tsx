@@ -91,7 +91,7 @@ const ProcessTree: React.FC = () => {
         </VStack>
       </Fade>
       <BackgroundCircle
-        blur={180}
+        blur={220}
         bottom={0}
         top="-10%"
         left="-10%"
@@ -99,7 +99,7 @@ const ProcessTree: React.FC = () => {
         rotation={0}
         opacity={0.7}
         bg="brand.600"
-        height="140%"
+        height="120%"
         width="120%"
       />
     </Container>

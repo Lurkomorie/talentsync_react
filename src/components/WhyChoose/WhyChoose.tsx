@@ -49,7 +49,7 @@ const WhyChoose: React.FC = () => {
         rotation={0}
         opacity={0.7}
         bg="brand.600"
-        height="140%"
+        height="120%"
         width="120%"
       />
     </Container>
