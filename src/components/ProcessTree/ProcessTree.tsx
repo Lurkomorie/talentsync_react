@@ -93,32 +93,20 @@ const ProcessTree: React.FC = () => {
       <BackgroundCircle
         blur={120}
         top={0}
-        left="40%"
-        rotation={50}
+        left="0"
+        rotation={0}
         bg="brand.600"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
+        height="120%"
+        width="70%"
       />
       <BackgroundCircle
-        blur={120}
-        left="50%"
-        top="40%"
-        rotation={-50}
+        blur={220}
+        top={0}
+        right={0}
+        rotation={0}
         bg="brand.500"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
+        height="120%"
+        width="70%"
       />
     </Container>
   );

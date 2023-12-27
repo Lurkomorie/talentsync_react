@@ -16,9 +16,7 @@ const Footer: React.FC = () => {
   return (
     <Box
       bg="brand.200"
-      pb={{
-        base: 6,
-      }}
+      pb={2}
       pt={{
         base: 6,
         md: 8,

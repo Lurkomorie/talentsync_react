@@ -40,62 +40,40 @@ const AboutBlock: React.FC = () => {
       <BackgroundCircle
         blur={140}
         top={0}
-        right="30%"
-        rotation={-50}
+        right="0"
+        rotation={0}
         bg="brand.600"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
+        height="70%"
+        width="60%"
+      />
+      <BackgroundCircle
+        blur={220}
+        top={0}
+        left="0"
+        rotation={0}
+        bg="brand.500"
+        height="70%"
+        width="60%"
       />
       <BackgroundCircle
         blur={140}
-        right="-30%"
-        top="20%"
-        rotation={50}
-        bg="brand.500"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
-      />
-      <BackgroundCircle
-        blur={120}
-        top="50%"
-        left="30%"
-        rotation={-50}
+        bottom="30%"
+        right={0}
+        left={0}
+        rotation={0}
         bg="brand.600"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
+        height="50%"
+        width="120%"
       />
       <BackgroundCircle
-        blur={120}
-        left="30%"
-        top="80%"
-        rotation={100}
+        blur={220}
+        bottom={0}
+        right={0}
+        left={0}
+        rotation={0}
         bg="brand.500"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
+        height="50%"
+        width="120%"
       />
     </Container>
   );

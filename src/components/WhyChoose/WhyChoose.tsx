@@ -42,18 +42,13 @@ const WhyChoose: React.FC = () => {
       </Fade>
       <BackgroundCircle
         blur={120}
-        left="5%"
-        top="30%"
+        right={0}
+        left={0}
+        top="10%"
         rotation={0}
         bg="brand.500"
-        height={{
-          base: "250px",
-          md: "450px",
-        }}
-        width={{
-          base: "450px",
-          md: "100%",
-        }}
+        height="100%"
+        width="100%"
       />
     </Container>
   );
