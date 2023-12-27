@@ -107,17 +107,6 @@ const Toolbar: React.FC = () => {
         height="100%"
         ml={{ base: 0, md: -6 }}
       />
-      <BackgroundCircle
-        blur={50}
-        bottom={0}
-        top="0"
-        left="0"
-        rotation={0}
-        opacity={0.7}
-        bg="brand.600"
-        height="120%"
-        width="200px"
-      />
       <Box display={{ base: "none", md: "block" }}>
         <HStack spacing={5}>{menuItems}</HStack>
       </Box>

@@ -23,6 +23,7 @@ const FirstGreetings: React.FC = () => {
             md: "90%",
           }}
           alignItems="flex-start"
+          position="relative"
         >
           <Text
             w="full"
@@ -41,6 +42,18 @@ const FirstGreetings: React.FC = () => {
           >
             Directly. B2B. No Intermediares.
           </Text>
+          <BackgroundCircle
+            blur={180}
+            bottom={0}
+            top="-10%"
+            left="-10%"
+            right={0}
+            rotation={0}
+            opacity={0.7}
+            bg="brand.600"
+            height="140%"
+            width="120%"
+          />
         </VStack>
       </Fade>
       <Fade>
@@ -53,36 +66,6 @@ const FirstGreetings: React.FC = () => {
           display={{ base: "none", md: "block" }}
         />
       </Fade>
-      <BackgroundCircle
-        blur={180}
-        left={-50}
-        top="50%"
-        rotation={0}
-        bg="brand.600"
-        height={{
-          base: "250px",
-          md: "450px",
-        }}
-        width={{
-          base: "350px",
-          md: "550px",
-        }}
-      />
-      <BackgroundCircle
-        blur={120}
-        left="200px"
-        top="10%"
-        rotation={0}
-        bg="brand.600"
-        height={{
-          base: "250px",
-          md: "550px",
-        }}
-        width={{
-          base: "150px",
-          md: "350px",
-        }}
-      />
     </Container>
   );
 };
