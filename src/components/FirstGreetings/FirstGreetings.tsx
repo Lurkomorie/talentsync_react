@@ -1,8 +1,9 @@
-import { Box, Container, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import BackgroundCircle from "../BackgroundCircle/BackgroundCircle";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
+import mainImage from "../../icons/mainpage.jpg";
 
 const FirstGreetings: React.FC = () => {
   return (
@@ -17,13 +18,14 @@ const FirstGreetings: React.FC = () => {
     >
       <Fade>
         <VStack
-          maxW={{
+          w={{
             base: "100%",
-            md: "50%",
+            md: "90%",
           }}
           alignItems="flex-start"
         >
           <Text
+            w="full"
             fontSize={{ base: "2xl", md: "4xl" }}
             fontWeight="bold"
             textAlign="left"
@@ -32,6 +34,7 @@ const FirstGreetings: React.FC = () => {
             to 40% of your costs.
           </Text>
           <Text
+            w="full"
             fontSize={{ base: "lg", md: "xl" }}
             fontWeight="semibold"
             textAlign="left"
@@ -39,6 +42,16 @@ const FirstGreetings: React.FC = () => {
             Directly. B2B. No Intermediares.
           </Text>
         </VStack>
+      </Fade>
+      <Fade>
+        <Image
+          src={mainImage}
+          alt="mainpage"
+          width="100%"
+          height="100%"
+          borderRadius="3xl"
+          display={{ base: "none", md: "block" }}
+        />
       </Fade>
       <BackgroundCircle
         blur={180}
