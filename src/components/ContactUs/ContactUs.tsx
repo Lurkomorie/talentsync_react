@@ -92,6 +92,14 @@ const ContactUs: React.FC = () => {
         md: 32,
       }}
       position="relative"
+      sx={{
+        "& form": {
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "stretch",
+        },
+      }}
     >
       <BookMeetingBtn
         px={{
@@ -101,15 +109,22 @@ const ContactUs: React.FC = () => {
         fontSize="2xl"
       />
       <BlockTitle>Or Let Us Contact You</BlockTitle>
-      <Fade bottom>
-        <Formik
-          initialValues={initialValues}
-          validationSchema={validationSchema}
-          onSubmit={handleSubmit}
-        >
-          {({ isSubmitting }) => (
-            <Form>
-              <VStack h="100%" w="md">
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}
+      >
+        {({ isSubmitting }) => (
+          <Form>
+            <Fade bottom>
+              <VStack
+                h="100%"
+                maxW="md"
+                w="100%"
+                align="center"
+                justify="center"
+                minW="350px"
+              >
                 <Field
                   name="name"
                   as={Input}
@@ -164,10 +179,10 @@ const ContactUs: React.FC = () => {
                   Send
                 </Button>
               </VStack>
-            </Form>
-          )}
-        </Formik>
-      </Fade>
+            </Fade>
+          </Form>
+        )}
+      </Formik>
       <BackgroundCircle
         blur={220}
         bottom={0}
