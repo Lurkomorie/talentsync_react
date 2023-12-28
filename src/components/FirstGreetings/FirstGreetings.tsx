@@ -32,7 +32,7 @@ const FirstGreetings: React.FC = () => {
             textAlign="left"
           >
             Employ the best Software Developers from Eastern Europe and save up
-            to 40% of your costs.
+            to 60% of your costs.
           </Text>
           <Text
             w="full"

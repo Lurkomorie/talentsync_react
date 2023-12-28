@@ -9,7 +9,7 @@ export const whyChooseItems: WhyChooseItemProps[] = [
     icon: LayersIcon,
     title: "Cost-Effectiveness",
     description:
-      "Value that speaks volumes. TalentSync delivers not only exceptional services but also cost-effective solutions. Our commission is a monthly salary of the engineer. That's it.",
+      "With rates between 15 E/h and 30 E/h and a comission of a monthly salary, TalentSync delivers not only exceptional services but also cost-effective solutions.",
   },
   {
     icon: CodeIcon,
